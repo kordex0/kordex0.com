@@ -1,1 +1,0 @@
-# kordex0.com
