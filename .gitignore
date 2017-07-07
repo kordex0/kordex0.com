@@ -100,3 +100,6 @@ ENV/
 
 # editor
 .idea/
+
+# compressed
+kordex0com.zip
