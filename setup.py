@@ -4,10 +4,10 @@ install_requires = [
     'pyramid',
 ]
 
-setup(name='kordex0.com',
+setup(name='kordex0',
       install_requires=install_requires,
       entry_points="""\
       [paste.app_factory]
-      main = src:main
+      main = kordex0:main
       """
 )
