@@ -1,0 +1,1 @@
+cat compressfilelist.txt | zip -@ kordex0com.zip

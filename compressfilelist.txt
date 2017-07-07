@@ -1,0 +1,5 @@
+kordex0
+application.py
+development.ini
+requirements.txt
+setup.py
