@@ -1,13 +1,11 @@
 from pyramid.config import Configurator
-from pyramid.response import Response
-
-
-def hello_world(request):
-    return Response('<body style="background-color: mediumpurple;"><h1>Love you Hana ;)</h1></body>')
 
 
 def main(global_config, **settings):
     config = Configurator(settings=settings)
-    config.add_route('hello', '/')
-    config.add_view(hello_world, route_name='hello')
+    config.include('pyramid_mako')
+    config.add_route('home', '/')
+    config.add_route('hello', '/hello/{name}')
+    config.add_static_view(name='static', path='kordex0:static')
+    config.scan('.views')
     return config.make_wsgi_app()
