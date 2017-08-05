@@ -3,7 +3,7 @@
 <head>
     <title>Home</title>
     <link rel="stylesheet"
-          href="${request.static_url('kordex0:static/base.css')}"/>
+          href="${request.static_url('kordex0:static/css/base.css')}"/>
 </head>
 <body style="">
     <h1>Home</h1>
