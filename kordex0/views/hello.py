@@ -1,5 +1,6 @@
 from pyramid.view import view_config, view_defaults
 
+from kordex0.models import Beer
 from kordex0.util.view_util import params
 from kordex0.views.base import BaseView
 
@@ -20,4 +21,5 @@ class HelloView(BaseView):
     @params
     def hello(self, name):
         LOG.debug('calling hello')
-        return {'name': name}
+        beer = self.request.dbsession.query(Beer).filter(Beer.name=='Blue Buck').first()
+        return {'name': beer.name}
