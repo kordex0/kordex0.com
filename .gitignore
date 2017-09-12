@@ -101,5 +101,8 @@ ENV/
 # editor
 .idea/
 
-# compressed
-kordex0com.zip
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

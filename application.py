@@ -1,7 +1,3 @@
-"""
-This file is used by aws to start up the application
-"""
-
 
 from pyramid.paster import get_app, setup_logging
 import os.path
